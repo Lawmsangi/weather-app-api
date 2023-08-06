@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-section">
+            <h1>WEATHER FORECAST</h1>
+            <div class="weather-line">
+                <p id="temperature"></p>
+                <div class="weather-date">
+                    <p id="weather-city"></p>
+                    <p id="date">DATE</p>
+                </div>
+                <div class="cloud-image">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="icon" class="icon">
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-section2">
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Another location">
+                <button id="search-btn">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.5em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path></svg>
+                </button>
+
+                <ul id="location-list">
+                    <li>London</li>
+                    <li>Aizawl</li>
+                    <li>New York</li>   
+                    <li>Tokyo</li>
+                </ul>
+            </div>
+
+            <div class="weather-info">
+                <h4>Weather Details</h4>
+                <div class="weather-details">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

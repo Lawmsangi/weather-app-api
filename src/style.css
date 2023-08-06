@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+
+}
+
+.container {
+   position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 1000px; 
+}
+
+.weather-section {
+     background: #0D222D;
+    color: white;
+     padding: 20px;
+     border-radius: 20px;
+     background-image: url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.weather-section h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 30px;
+}
+
+.weather-line {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+#temperature {
+    font-size: 55px;
+}
+
+#weather-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   margin-top: 10px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+#date {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.cloud-image img{
+    height: 40px;
+}
+
+.weather-section2 {
+    background-color: #0D222D;
+     color: white;
+     padding: 20px;
+     border-radius: 20px;
+     opacity: 0.8;
+}
+
+.search{
+    align-self: flex-start;
+}
+
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+}
+
+#search-input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    background-color: #0D222D;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    padding: 10px;
+}
+button:hover{
+    background: #7c7c7c6b;
+}
+
+ul  {
+   padding: 10px 0; 
+}
+
+ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul li:last-child,
+.weather-details p:last-child{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+/* ul li:hover {
+    background: #7c7c7c6b;
+} */
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.weather-details p {
+    display: flex;
+    justify-content: space-between;
+}
