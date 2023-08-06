@@ -1,3 +1,5 @@
+![Weather App Screenshot](src/images/homepage.png)
+
 <a name="readme-top"></a>
 
 <div align="center">
